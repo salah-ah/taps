@@ -1,0 +1,42 @@
+/*Style our tab component*/
+.tabs {
+    display: grid;
+}
+
+[role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+[role="tab"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+[role="tab"]:hover {
+    background-color: #ccc;
+}
+
+[role="tab"][aria-selected="true"] {
+    background-color: #fff;
+}
+
+[role="tabpanel"] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.is-active {
+    background-color: #fff;
+}
