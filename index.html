@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-            name="viewport"
-    />
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <link href="style.css" rel="stylesheet"/>
-    <title>Tabs</title>
+  <meta charset="UTF-8"/>
+  <meta
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport"
+  />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <link href="style.css" rel="stylesheet"/>
+  <title>Tabs</title>
+
 </head>
 <body>
 <div class="wrapper">
-    <!--     Create a structure for tabs component 3 tabs at least-->
-    <div class="tabs">
-        <div aria-label="Tabs" role="tablist">
-            <button
-                    aria-controls="tab-1"
-                    aria-selected="true"
-                    id="tab-1"
-                    role="tab"
-            >
-                Tab 1
-            </button>
-            <button
-                    aria-controls="tab-2"
-                    aria-selected="false"
-                    id="tab-2"
-                    role="tab"
-            >
-                Tab 2
-            </button>
-            <button
-                    aria-controls="tab-3"
-                    aria-selected="false"
-                    id="tab-3"
-                    role="tab"
-            >
-                Tab 3
-            </button>
-        </div>
-        <div aria-labelledby="tab-1" id="tab-1" role="tabpanel">
-            <p>Tab 1 content</p>
-        </div>
-        <div aria-labelledby="tab-2" hidden id="tab-2" role="tabpanel">
-            <p>Tab 2 content</p>
-        </div>
-        <div aria-labelledby="tab-3" hidden id="tab-3" role="tabpanel">
-            <p>Tab 3 content</p>
-        </div>
+  <!--     Create a structure for tabs component 3 tabs at least-->
+  <div class="tabs">
+    <div aria-label="Tabs" role="tablist">
+      <button
+              aria-controls="tab-1"
+              aria-selected="true"
+              id="tab-1"
+              role="tab"
+      >
+        Tab 1
+      </button>
+      <button
+              aria-controls="tab-2"
+              aria-selected="false"
+              id="tab-2"
+              role="tab"
+      >
+        Tab 2
+      </button>
+      <button
+              aria-controls="tab-3"
+              aria-selected="false"
+              id="tab-3"
+              role="tab"
+      >
+        Tab 3
+      </button>
     </div>
+    <div aria-labelledby="tab-1" id="tab-1" role="tabpanel">
+      <p>Tab 1 content</p>
+    </div>
+    <div aria-labelledby="tab-2" hidden id="tab-2" role="tabpanel">
+      <p>Tab 2 content</p>
+    </div>
+    <div aria-labelledby="tab-3" hidden id="tab-3" role="tabpanel">
+      <p>Tab 3 content</p>
+    </div>
+  </div>
 </div>
 <script src="script.js"></script>
 </body>
